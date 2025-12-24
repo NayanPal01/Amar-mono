@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { ShoppingCart, Facebook, Instagram, X, Upload } from 'lucide-react';
 
 
-const EMAILJS_SERVICE_ID = 'service_yyo8jeo';
-const EMAILJS_TEMPLATE_ID = 'template_rsgjabf';
-const EMAILJS_PUBLIC_KEY = 'tg01A_tZwzT9WjH-S';
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 
 export default function AmarMomoWebsite() {
   const [isLoading, setIsLoading] = useState(true);
